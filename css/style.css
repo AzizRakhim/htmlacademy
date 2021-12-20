@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url('TTNormsPro-Bold.woff2') format('woff2'),
+        url('TTNormsPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "TT Norms Pro","Arial",sans-serif;
+}
+
+#tasks{
+    background-image: url('https://assets.htmlacademy.ru/img/icons/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 95px 0 125px;
+}
+
+.container{
+    width: 847px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+
+.title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #333;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.tasks-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks-item{
+    color: #fff;
+    margin-bottom: 14px;
+    width: 847px;
+    background-color: #2e2c9c;
+    padding: 30px 45px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tasks-item-div{
+    width: 560px;
+}
+
+.item-title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.tasks-item-text{
+    font-size: 16px;
+    color: #fff;
+}
+
+.tasks-item::before{
+    content: '';
+    width: 88px;
+    height: 88px;
+    background-image: url('https://assets.htmlacademy.ru/img/tutors/ruler-icon.svg');
+    margin-right: 30px;
+}
+
+.consultant::before{
+    background-image: url('https://assets.htmlacademy.ru/img/tutors/consulting-icon.svg');
+}
+
+.help::before{
+    background-image: url('https://assets.htmlacademy.ru/img/tutors/bottle-icon.svg');
+}
+
